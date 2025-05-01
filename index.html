@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Sagar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Akshat Sagar</div>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#internship" class="nav-link">Internship</a></li>
+                        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                        <li><a href="#contact" class="nav-link">Contacts</a></li>
+                    </ul>
+                    <div class="mobile-menu-btn" id="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-close" id="mobile-menu-close">×</div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#internship" class="mobile-nav-link">Internship</a></li>
+            <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contacts</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="designation"><span class="animated-designation">UI/UX DESIGNER</span></div>
+                        <h1 class="hero-title">Hello, my name is<br>Akshat Sagar</h1>
+                        <p class="hero-description">
+                            As an engineering student with a strong passion for coding and problem-solving, I thrive in collaborative environments. I aim to contribute to innovative projects in a dynamic organization, leveraging my skills to develop impactful solutions. With a commitment to continuous learning and staying current with industry trends, I strive to deliver excellence in every endeavor.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="Akshat_Resume.pdf" target="_blank" onclick="setTimeout(function() { const link = document.createElement('a'); link.href='Akshat_Resume.pdf'; link.download='Akshat_Resume.pdf'; link.click(); }, 100);" class="btn primary-btn">Resume</a>
+                            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle night/morning vision">
+                                <div class="theme-icon-container">
+                                    <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="a.png" alt="Akshat Sagar">
+                        <div class="bird-animation">
+                            <div class="bird bird-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 7h.01"></path>
+                                    <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"></path>
+                                    <path d="m20 7 2 .5-2 .5"></path>
+                                    <path d="M10 18v3"></path>
+                                    <path d="M14 17.75V21"></path>
+                                    <path d="M7 18a6 6 0 0 0 3.84-10.61"></path>
+                                </svg>
+                            </div>
+                            <div class="bird bird-2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 7h.01"></path>
+                                    <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"></path>
+                                    <path d="m20 7 2 .5-2 .5"></path>
+                                    <path d="M10 18v3"></path>
+                                    <path d="M14 17.75V21"></path>
+                                    <path d="M7 18a6 6 0 0 0 3.84-10.61"></path>
+                                </svg>
+                            </div>
+                            <div class="bird bird-3">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 7h.01"></path>
+                                    <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"></path>
+                                    <path d="m20 7 2 .5-2 .5"></path>
+                                    <path d="M10 18v3"></path>
+                                    <path d="M14 17.75V21"></path>
+                                    <path d="M7 18a6 6 0 0 0 3.84-10.61"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-card">
+                        <h2 class="section-title centered">About Me</h2>
+                        <div class="about-text">
+                            <p>
+                                I am a Computer Science and Engineering student at Lovely Professional University, skilled in Python, Java, C++, R, and data analysis. I have hands-on experience with tools like AWS, Tableau, Power BI, Docker, and SQL, which enable me to work efficiently across various technologies. Through internships and personal projects, I have developed expertise in machine learning, cloud integration, and mobile app development. Notable projects include a plant disease detection system and a mobile egg-boiling app. I am a proactive learner, with strong problem-solving abilities and a passion for technology. My adaptability, teamwork, and communication skills make me eager to contribute to innovative tech solutions and continue growing in this dynamic field.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+<section id="skills" class="skills-section section bg-white">
+    <div class="container">
+      <h2 class="section-title centered">Skills</h2>
+      <div class="skills-grid">
+        <!-- Skill Icons Only -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Tableau" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" width="60">
+        </div>
+        <div class="skill-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="Kotlin.svg" alt="kotlin" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="Linux.svg" alt="linux" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="Kubernetes.svg" alt="kuber" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="MongoDB.svg" alt="mongo" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="Keras.svg" alt="keras" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="OpenCV.svg" alt="opencv" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="Jira.svg" alt="jira" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="NumPy.svg" alt="numpy" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="Apache Hadoop.svg" alt="hadoop" width="60">
+        </div>
+        <div class="skill-card">
+            <img src="Eclipse IDE.svg" alt="ecl" width="60">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <h2 class="section-title centered">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="plant.jpg" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">PLANT DISEASE DETECTION</h3>
+                            <ul class="project-description">
+                                <li>Developed a cloud-integrated plant disease detection system using deep learning and AWS for automated leaf image analysis.</li>
+                                <li>Configured Boto3-based AWS SDK integration to enable efficient communication with S3 for data storage and 92% retrieval data.</li>
+                                <li>Tech: Python, S3 Bucket, TensorFlow, CNN, Boto3, Streamlit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="egg.jpg" alt="EGG BOILER ">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">EGG BOILER APP</h3>
+                            <ul class="project-description">
+                                <li>Created a mobile application to assist users in determining optimal egg boiling times based on user preferences.</li>
+                                <li>Designed an intuitive and user-centric UI/UX using Figma, resulting in a 95% user satisfaction rate.</li>
+                                <li>Tech: React Native, Figma, Firebase, REST APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="bank.jpg" alt="ONLINE BANKING WEB">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">ONLINE BANKING WEB</h3>
+                            <ul class="project-description">
+                                <li>Implemented features for the admin panel, including file handling, error checking, and account management.</li>
+                                <li>Improved the user panel with robust password authentication to 25%, seamless fund transfers, and real-time balance tracking.</li>
+                                <li>Tech: C, HTML, CSS, File Handling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Section -->
+        <section id="internship" class="internship-section section bg-white">
+            <div class="container">
+                <h2 class="section-title centered">Internship</h2>
+                <div class="internship-grid">
+                    <!-- Internship 1 -->
+                    <div class="internship-card">
+                        
+                        <div class="internship-info">
+                            <h3 class="internship-title">Orange Infotech</h3>
+                            <p class="internship-position">Position: Data Science Intern</p>
+                            <p class="internship-duration">Duration: 2 months</p>
+                            <ul class="internship-description">
+                                <li>Engineered efficient data preprocessing pipelines for a Credit Card System, performing advanced data validation, and transformation efficiency by 30%.</li>
+                                <li>Utilized JIRA to streamline task tracking and issue resolution, improving team productivity by 20% in an agile development environment.</li>
+                                <li>Tech stacks used: Python, Pandas, Matplotlib, MySQL, JIRA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section section">
+            <div class="container">
+                <h2 class="section-title centered">Certifications</h2>
+                <div class="certifications-grid">
+                    <!-- Certification 1 -->
+                    <div class="certification-card">
+                        <div class="certification-image">
+                            <img src="akshat1.png" alt="Certification 1">
+                        </div>
+                        <div class="certification-info">
+                            <h3 class="certification-title">User Interface with SwiftUI</h3>
+                            <p class="certification-issuer">Meta</p>
+                            
+                        </div>
+                    </div>
+                    <!-- Certification 2 -->
+                    <div class="certification-card">
+                        <div class="certification-image">
+                            <img src="akshat2.png" alt="Certification 2">
+                        </div>
+                        <div class="certification-info">
+                            <h3 class="certification-title">UI/UX Desgin</h3>
+                            <p class="certification-issuer">Meta</p>
+                            
+                        </div>
+                    </div>
+                    <!-- Certification 3 -->
+                    <div class="certification-card">
+                        <div class="certification-image">
+                            <img src="akshat3.png" alt="Certification 3">
+                        </div>
+                        <div class="certification-info">
+                            <h3 class="certification-title">Android Development by Kotlin</h3>
+                            <p class="certification-issuer">GeeksForGeeks</p>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-title centered">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/akshat-sagar/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <div class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/akshat-sagar" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <div class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </div>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:socialsofakshat@gmail.com" class="social-link">
+                            <div class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">Akshat Sagar</div>
+                </div>
+             
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Akshat Sagar. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for image preview -->
+    <div id="image-modal" class="image-modal">
+        <div class="image-modal-content">
+            <span class="image-modal-close" id="image-modal-close">&times;</span>
+            <img id="modal-img" src="" alt="Preview" />
+            <div id="modal-desc" class="modal-desc"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

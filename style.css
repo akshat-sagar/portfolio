@@ -1,0 +1,605 @@
+/* Root Variables */
+:root {
+    --primary-color: #FFD700;
+    --primary-color-dark: #FFC000;
+    --text-color: #333333;
+    --bg-color: #ffffff;
+    --card-bg: #f8f9fa;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --primary-color: #FFD700;
+    --primary-color-dark: #FFC000;
+    --text-color: #ffffff;
+    --bg-color: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --border-color: #404040;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Base Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Section Backgrounds */
+.section {
+    background-color: var(--bg-color);
+}
+
+.section.bg-white {
+    background-color: var(--card-bg);
+}
+
+/* Card Styles */
+.about-card,
+.project-card,
+.internship-card,
+.certification-card,
+.achievement-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+/* Text Colors */
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.hero-title,
+.hero-description,
+.about-text p,
+.project-title,
+.project-description,
+.internship-title,
+.internship-description,
+.certification-title,
+.achievement-title,
+.achievement-description {
+    color: var(--text-color);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+/* Form Styles */
+.contact-form input,
+.contact-form textarea {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Hero CTA Styles */
+.hero-cta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn.primary-btn {
+    background: #FFD700;
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn.secondary-btn {
+    background: transparent;
+    color: #000000;
+    border: 2px solid #FFD700;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #FFC000;
+}
+
+.btn.secondary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .btn.primary-btn {
+    background: #FFD700;
+    color: #000000;
+}
+
+[data-theme="dark"] .btn.secondary-btn {
+    color: #ffffff;
+    border-color: #FFD700;
+}
+
+[data-theme="dark"] .btn.secondary-btn:hover {
+    background: rgba(255, 215, 0, 0.2);
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-right: auto;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+    background: #FFD700;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 8px;
+    height: 40px;
+    width: 40px;
+    min-width: auto;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-toggle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0);
+    border-radius: 50%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #FFC000;
+}
+
+.theme-toggle:hover::before {
+    transform: scale(2);
+}
+
+.theme-toggle:active {
+    transform: translateY(1px) scale(0.95);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.theme-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    stroke: #000000;
+    transform-origin: center;
+    position: relative;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .theme-icon {
+    transform: rotate(180deg);
+    animation: moonRise 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light mode styles */
+[data-theme="light"] .theme-icon {
+    transform: rotate(0deg);
+    animation: sunRise 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animation keyframes */
+@keyframes moonRise {
+    0% {
+        transform: rotate(0deg) scale(0.8);
+        opacity: 0.5;
+        filter: blur(2px);
+    }
+    50% {
+        transform: rotate(90deg) scale(1.2);
+        filter: blur(0);
+    }
+    100% {
+        transform: rotate(180deg) scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes sunRise {
+    0% {
+        transform: rotate(180deg) scale(0.8);
+        opacity: 0.5;
+        filter: blur(2px);
+    }
+    50% {
+        transform: rotate(90deg) scale(1.2);
+        filter: blur(0);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Add a subtle glow effect in dark mode */
+[data-theme="dark"] .theme-toggle {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+                0 0 10px rgba(255, 215, 0, 0.2);
+    animation: darkGlow 2s infinite alternate;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+@keyframes darkGlow {
+    0% {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+                    0 0 10px rgba(255, 215, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+                    0 0 15px rgba(255, 215, 0, 0.3);
+    }
+}
+
+/* Add a subtle pulse animation in light mode */
+[data-theme="light"] .theme-toggle {
+    animation: lightPulse 2s infinite alternate;
+}
+
+@keyframes lightPulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.02);
+    }
+}
+
+/* Remove theme-label styles since we no longer use it */
+.theme-label {
+    display: none;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .theme-toggle {
+    background: #FFD700; /* Keep yellow in dark mode */
+}
+
+[data-theme="dark"] .theme-icon-container {
+    background: transparent;
+}
+
+/* Light mode styles */
+[data-theme="light"] .theme-toggle {
+    background: #FFD700; /* Keep yellow in light mode */
+}
+
+[data-theme="light"] .theme-icon-container {
+    background: transparent;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-cta {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn.primary-btn,
+    .btn.secondary-btn {
+        width: auto;
+        min-width: auto;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .theme-toggle {
+        height: 35px;
+        width: 35px;
+        padding: 6px;
+    }
+
+    .theme-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Hero Image Styles */
+.hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Bird Animation Styles */
+.bird-animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bird {
+    position: absolute;
+    color: white;
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+    animation: birdFlap 0.4s infinite alternate;
+}
+
+.bird svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Bird Flapping Animation */
+@keyframes birdFlap {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Bird 1 Animation */
+.bird-1 {
+    top: 20%;
+    right: 10%;
+    animation: flyRight1 15s linear infinite, birdFlap 0.4s infinite alternate;
+}
+
+@keyframes flyRight1 {
+    0% {
+        transform: translateX(0) translateY(0) scale(0.8) rotate(-5deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    20% {
+        transform: translateX(20px) translateY(-5px) scale(0.9) rotate(5deg);
+    }
+    40% {
+        transform: translateX(40px) translateY(-10px) scale(0.95) rotate(-5deg);
+    }
+    60% {
+        transform: translateX(60px) translateY(-15px) scale(1) rotate(5deg);
+    }
+    80% {
+        transform: translateX(80px) translateY(-20px) scale(0.95) rotate(-5deg);
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(100px) translateY(-20px) scale(0.8) rotate(5deg);
+        opacity: 0;
+    }
+}
+
+/* Bird 2 Animation */
+.bird-2 {
+    top: 40%;
+    right: 15%;
+    animation: flyRight2 12s linear infinite, birdFlap 0.3s infinite alternate;
+    animation-delay: 2s;
+}
+
+@keyframes flyRight2 {
+    0% {
+        transform: translateX(0) translateY(0) scale(0.7) rotate(-5deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    20% {
+        transform: translateX(30px) translateY(-8px) scale(0.8) rotate(5deg);
+    }
+    40% {
+        transform: translateX(60px) translateY(-16px) scale(0.85) rotate(-5deg);
+    }
+    60% {
+        transform: translateX(90px) translateY(-24px) scale(0.9) rotate(5deg);
+    }
+    80% {
+        transform: translateX(120px) translateY(-30px) scale(0.85) rotate(-5deg);
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(150px) translateY(-30px) scale(0.7) rotate(5deg);
+        opacity: 0;
+    }
+}
+
+/* Bird 3 Animation */
+.bird-3 {
+    top: 60%;
+    right: 5%;
+    animation: flyRight3 18s linear infinite, birdFlap 0.5s infinite alternate;
+    animation-delay: 4s;
+}
+
+@keyframes flyRight3 {
+    0% {
+        transform: translateX(0) translateY(0) scale(0.6) rotate(-5deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    20% {
+        transform: translateX(40px) translateY(-10px) scale(0.7) rotate(5deg);
+    }
+    40% {
+        transform: translateX(80px) translateY(-20px) scale(0.8) rotate(-5deg);
+    }
+    60% {
+        transform: translateX(120px) translateY(-30px) scale(0.9) rotate(5deg);
+    }
+    80% {
+        transform: translateX(160px) translateY(-40px) scale(0.8) rotate(-5deg);
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(200px) translateY(-40px) scale(0.6) rotate(5deg);
+        opacity: 0;
+    }
+}
+
+/* Enhanced Dark mode adjustments */
+[data-theme="dark"] .bird {
+    color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.7));
+    animation: birdFlap 0.4s infinite alternate, darkGlow 2s infinite alternate;
+}
+
+@keyframes darkGlow {
+    0% {
+        filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.7));
+    }
+    100% {
+        filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .bird {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .bird-1 {
+        top: 15%;
+        right: 5%;
+        animation: flyRight1 12s linear infinite, birdFlap 0.4s infinite alternate;
+    }
+    
+    .bird-2 {
+        top: 35%;
+        right: 10%;
+        animation: flyRight2 10s linear infinite, birdFlap 0.3s infinite alternate;
+    }
+    
+    .bird-3 {
+        top: 55%;
+        right: 0%;
+        animation: flyRight3 15s linear infinite, birdFlap 0.5s infinite alternate;
+    }
+} 
